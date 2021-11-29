@@ -152,17 +152,17 @@ print()
 print("\nPerformance measure for predicted price of",ticker, '\n')
 print("High-Low")
 print("MAE:  ", mean_absolute_error(y_test.values,preds_hl))
-print("RSME: ", math.sqrt(mean_squared_error(y_test.values, preds_hl)))
+print("RMSE: ", math.sqrt(mean_squared_error(y_test.values, preds_hl)))
 print("R2:   ", r2_score(y_test.values,preds_hl))
 
 
 print("\nHigh-EMA(10)")
 print("MAE:  ", mean_absolute_error(y_test.values,preds_h_ema10))
-print("RSME: ", math.sqrt(mean_squared_error(y_test.values, preds_h_ema10)))
+print("RMSE: ", math.sqrt(mean_squared_error(y_test.values, preds_h_ema10)))
 print("R2:   ", r2_score(y_test.values,preds_h_ema10))
 
 
 print("\nHigh-EMA(5)")
 print("MAE:  ", mean_absolute_error(y_test.values,preds_h_ema5))
-print("RSME: ", math.sqrt(mean_squared_error(y_test.values, preds_h_ema5)))
+print("RMSE: ", math.sqrt(mean_squared_error(y_test.values, preds_h_ema5)))
 print("R2:   ", r2_score(y_test.values,preds_h_ema5))
